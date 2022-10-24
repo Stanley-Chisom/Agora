@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    background: #0D1117;
+}
+
+.title {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #8693a0ab;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kanban {
+    display: flex;
+    padding: 5rem;
+    width: 1000px;
+    border-radius: 5px;
+}
+
+.kanban * {
+    font-family: 'Poppins', sans-serif;
+}
+
+.kanban__column {
+    flex: 1;
+}
+
+.kanban__column:not(:last-child) {
+    margin-right: 30px;
+}
+
+.kanban__column-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #8693a0ab;
+    user-select: none;
+}
+
+.kanban__item-input {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background: #273340;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #8693A0;
+}
+
+.kanban__dropzone {
+    height: 10px;
+    transition: background 0.15s, height 0.15s;
+}
+
+.kanban__dropzone--active {
+    height: 20px;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.kanban__add-item {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #88c4ff;
+    background: #1d3442bb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
